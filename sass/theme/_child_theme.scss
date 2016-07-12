@@ -1,0 +1,367 @@
+@import "theme-mixins";
+
+html {
+	@include font-smoothing;
+	font-size:100%;
+}
+
+body {
+	font-family: $primary-font;
+	color:$main-font-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:$primary-font;
+}
+
+h1, h2 {
+	color:$brand-primary;
+}
+
+h2 {
+	font-weight:400;
+	margin:10px 0px .5rem 0px;
+}
+
+h3 {
+	font-weight:300;
+	margin-bottom:4%;
+}
+
+h3, h4, h5, h6 {
+	color:$brand-gray;
+}
+
+p {
+	font-size:1.15rem;
+}
+
+ul {
+	padding-left:20px;
+}
+
+li {
+	padding:5px 0px;
+	font-size:1.15rem;
+}
+
+a:hover {
+	transition: 0.5s ease;
+}
+
+
+.entry-title {
+	font-size:3rem;
+	font-weight:800;
+	margin:45px 0px 35px 0px;
+}
+
+.wrapper {
+	padding:0px;
+}
+
+.fullimg {
+	width:100%;
+}
+
+//nav
+
+.bg-inverse {
+	background: -webkit-linear-gradient(#007db6, #09658f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#007db6, #09658f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#007db6, #09658f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#007db6, #09658f); /* Standard syntax (must be last) */
+    border-bottom: 3px solid #79b343;
+}
+
+.navbar {
+	height:90px;
+}
+
+.navbar, .navbar-brand {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.navbar-header {
+	display:inline-block;
+	float:left;
+}
+
+#main-menu {
+	display:inline-block;
+	float:left;
+	margin-top:40px;
+}
+
+@media (min-width: 544px) {
+.navbar-toggleable-xs {
+    display: block!important;
+    position: relative;
+    right: 450px;
+    float:right
+   }
+}
+
+#logo {
+	position: absolute;
+    clear: both;
+    display: inline-block;
+    left: 0px;
+}
+
+.navbar-inner{
+    position:relative;
+    padding-left:70px;
+}
+.navbar .brand {                
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    background: #f00;        
+    margin-left: 0px;
+    padding: 10px;
+}
+
+//mega menu plugin 
+
+#mega-menu-wrap-primary {
+    clear: both;
+    position: absolute;
+    left: 350px;
+    top: 20px;
+    background:transparent;
+}
+
+
+
+//nav callout 
+
+.callout {
+	float:right;
+	position:absolute;
+	right:0px;
+	margin-top:10px;
+}
+
+.top-icons {
+
+	ul {
+		list-style-type: none;
+		padding:18px 10px;
+		background: -webkit-linear-gradient(#f1f1f2, #fff, #dbdcdd); /* For Safari 5.1 to 6.0 */
+    	background: -o-linear-gradient(#f1f1f2, #fff, #dbdcdd); /* For Opera 11.1 to 12.0 */
+    	background: -moz-linear-gradient(#f1f1f2, #fff, #dbdcdd); /* For Firefox 3.6 to 15 */
+    	background: linear-gradient(#f1f1f2, #fff, #dbdcdd); /* Standard syntax (must be last) */
+		margin-top:10px;
+	
+		li {
+			display:inline-block;
+			padding:5px;
+			border-right:1px solid #333;
+
+			img {
+				max-height:35px;
+				margin-bottom:6px;
+				
+					&:nth-child(3) {
+						background:#000;
+				}
+			}
+
+			a {
+				color:$main-font-color;
+				text-align:center;
+				display: block;
+				font-size:1rem;
+			}
+		}
+	}
+}
+
+.top-icons ul li:last-child {
+	border-right:none;
+}
+
+.top-icons ul li img a:nth-child(3) {
+	margin-bottom:20px;
+}
+
+//search header 
+
+.top-search {
+	max-width:300px;
+}
+
+.gsc-search-button {
+	margin-left:-50px!important;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+	background:none!important;
+	color:#000;
+}
+
+//image alignment 
+
+.alignright {
+	margin-left:45px;
+}
+
+
+//footer 
+
+#wrapper-footer {
+	background: -webkit-linear-gradient(#007db6, #09658f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#007db6, #09658f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#007db6, #09658f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#007db6, #09658f); /* Standard syntax (must be last) */
+    border-top: 3px solid #79b343;
+    width:100%;
+
+    	.site-info {
+    		color:#fff;
+    		text-align:center;
+    	}
+
+    		a {
+    			color:#fff;
+    		}
+
+}
+
+//slider 
+
+.slider {
+	max-height:550px;
+	overflow:hidden;
+}
+
+
+//front page 
+
+.feature {
+	margin:30px 0px;
+	overflow:hidden;
+
+	img {
+		position:relative;
+	}
+
+	.caption{
+		opacity:0.9;
+		position:relative;
+		bottom:64px;
+		padding:15px 5px;
+	}
+
+	.caption-first {
+		background:$brand-orange;
+	}
+
+	.caption-second {
+		background:$brand-green;
+	}
+
+	.caption-third {
+		background:$brand-primary;
+	}
+
+	.caption-fourth {
+		background:$brand-gray;
+	}
+
+	p {
+		display:none;
+	}
+
+	h2 {
+		bottom:10px;
+		color:#fff;
+		text-align:center;
+		font-size:1.5rem;
+	}
+		a {
+			color:#fff;
+		}
+}
+
+
+//submenus for community pages 
+
+.subnav {
+
+	ul {
+		list-style-type:none;
+		margin:0px;
+		padding:0px;
+
+
+			@for $i from 1 through length($colors) {
+  			li:nth-child(#{length($colors)}n+#{$i}) {
+    		background: (nth($colors, $i));
+    		display:inline-block;
+    		width:33.3333%;
+    		float:left;
+    		padding:40px 10px;
+    		font-weight:300;
+
+  	
+    			a {
+    				color:#fff;
+    				text-align:center;
+    				font-size:1.5rem;
+    				display:block;
+    			
+    				&:hover {
+    					text-decoration: none;
+    				}
+    		    }
+  		
+  			}
+
+		}
+	
+	}
+
+}
+
+//accordions sitewide 
+	.ac_open_cl_icon {
+		display:none;
+	}
+
+	.wpsm_panel-default > .wpsm_panel-heading {
+    background: #f3f3f4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f3f3f4, #ffffff, #f3f3f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f3f3f4, #ffffff, #f3f3f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f3f3f4, #ffffff, #f3f3f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f3f3f4, #ffffff, #f3f3f4); /* Standard syntax */
+
+}
+
+.wpsm_panel-default > .wpsm_panel-heading:hover {
+    background: #8ebe4d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#8ebe4d, #abd063, #98c555); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#8ebe4d, #abd063, #98c555); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#8ebe4d, #abd063, #98c555); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8ebe4d, #abd063, #98c555); /* Standard syntax */
+}
+
+.acc-a {
+   background: #8ebe4d; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#8ebe4d, #abd063, #98c555); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#8ebe4d, #abd063, #98c555); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#8ebe4d, #abd063, #98c555); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8ebe4d, #abd063, #98c555); /* Standard syntax */
+}
+
+#wpsm_accordion_129 .wpsm_panel-title a:hover, #wpsm_accordion_129 .wpsm_panel-title a:focus {
+    color: #fff !important;
+}
+
+.ac_open_cl_icon {
+display:none!important;
+}
+
